@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+
 
 body {
     font-family: Arial, sans-serif;
@@ -14,15 +17,15 @@ body {
 }
 
 header {
-    background: #333;
+    background: #723554;
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
 nav {
-    background: #444;
-    color: #fff;
+    background: #723554;
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -46,10 +49,21 @@ nav ul li a:hover {
 main {
     flex: 1;
     padding: 2rem;
+    background-image: url('../img/F4.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 .content-section {
     display: none;
+    background: rgba(64, 63, 63, 0.199);
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    margin: 20px; 
+    max-width: 100%;   
 }
 
 .content-section.active {
@@ -59,6 +73,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 form label {
@@ -73,7 +88,7 @@ form input, form button {
 }
 
 form button {
-    background: #333;
+    background: #723554;
     color: #fff;
     cursor: pointer;
     transition: background 0.3s;
@@ -89,4 +104,7 @@ form button:hover {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 5px;
+}
+label, h2{
+    color: #fff;
 }
