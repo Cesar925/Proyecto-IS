@@ -6,7 +6,33 @@
     
 }
 
+.acomodar{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+    background-color: #555;
+}
+.registro-section, .notas-section {
+    flex: 1; /* Each section takes up equal space */
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem; 
+}
 
+form input, form button, .notas-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input, form button, .notas-section textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 body {
     font-family: Arial, sans-serif;
