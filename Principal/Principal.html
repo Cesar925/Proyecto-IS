@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personal - La Inmaculada</title>
+    <link rel="stylesheet" href="Principal.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro de Personal - La Inmaculada</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('registro')">Registrar Horario</a></li>
+            <li><a href="#" onclick="showSection('buscar')">Buscar Horarios</a></li>
+            <li><a href="#" onclick="showSection('lista')">Emitir Lista</a></li>
+            <li><a href="#" onclick="showSection('notificar')">Notificaciones Automáticas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="registro" class="content-section">
+            <h2>Registrar Horario</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="entrada">Hora de Entrada:</label>
+                <input type="time" id="entrada" name="entrada" required>
+                <label for="salida">Hora de Salida:</label>
+                <input type="time" id="salida" name="salida" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <section id="buscar" class="content-section">
+            <h2>Buscar Horarios</h2>
+            <form>
+                <label for="busqueda">Nombre o Fecha:</label>
+                <input type="text" id="busqueda" name="busqueda" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section id="lista" class="content-section">
+            <h2>Emitir Lista de Entrada y Salida</h2>
+            <button>Generar Lista</button>
+            <!-- Aquí se mostrará la lista generada -->
+            <div id="lista-resultados"></div>
+        </section>
+
+        <section id="notificar" class="content-section">
+            <h2>Notificaciones Automáticas</h2>
+            <p>Las notificaciones automáticas se enviarán según las configuraciones establecidas.</p>
+        </section>
+    </main>
+
+    <script src="Principal.js"></script>
+</body>
+
+</html>
